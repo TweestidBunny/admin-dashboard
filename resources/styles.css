@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 4fr;
+  grid-template-areas:
+    'navbar header'
+    'navbar main';
+  min-height: 100vh;
+}
+
+nav {
+  grid-area: navbar;
+  background-color: #00a8e8;
+  z-index: 2;
+}
+
+header {
+  grid-area: header;
+  box-shadow: 0 0 10px 3px gray;
+  z-index: 1;
+}
+
+main {
+  background-color: #e9ecef;
+}
