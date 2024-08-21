@@ -150,7 +150,7 @@ input {
   gap: 1.5rem;
 }
 
-.profile img:nth-of-type(2) {
+.profilePic {
   height: 3rem;
   width: 3rem;
   border-radius: 50%;
