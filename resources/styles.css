@@ -8,7 +8,8 @@ body {
 }
 
 p,
-h3 {
+h3,
+h4 {
   margin: 0;
 }
 
@@ -222,12 +223,13 @@ main {
 .card {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 30px;
   border-left: 8px solid #ffb703;
   padding: 2rem 1rem;
 }
 
-.card p {
+main p:not(.cardTitle) {
   color: gray;
   font-weight: bold;
 }
@@ -241,4 +243,21 @@ h3 {
   gap: 30px;
   align-self: end;
   padding-right: 10px;
+}
+
+.announce {
+  padding: 35px;
+}
+
+.announce>div p {
+  font-size: 0.9rem;
+}
+
+.announce>div {
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.announce>div:last-child {
+  border: none;
 }
