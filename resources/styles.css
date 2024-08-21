@@ -261,3 +261,15 @@ h3 {
 .announce>div:last-child {
   border: none;
 }
+
+.trend {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 25px;
+}
+
+.trend>div {
+  display: flex;
+  gap: 15px;
+}
