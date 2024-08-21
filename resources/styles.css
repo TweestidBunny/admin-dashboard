@@ -7,7 +7,8 @@ body {
   margin: 0;
 }
 
-p {
+p,
+h3 {
   margin: 0;
 }
 
@@ -62,13 +63,16 @@ nav a:hover {
   color: #c0c0c0;
 }
 
-img[alt="View Dashboard"] {
+img[alt="View Dashboard"],
+nav img {
   filter: invert(100%);
+}
+
+img[alt="View Dashboard"] {
   height: 3.5rem;
 }
 
-nav img {
-  filter: invert(100%);
+[alt$='Icon'] {
   height: 2rem;
 }
 
@@ -125,11 +129,11 @@ input {
   border-radius: 50%;
 }
 
-.greeting p {
+.greeting h2 {
   font-size: 1.5rem;
 }
 
-.greeting p::before {
+.greeting h2::before {
   content: 'Hi There,';
   display: block;
   font-weight: bold;
@@ -175,10 +179,6 @@ input {
   box-shadow: .5px 2px 4px 1px gray;
 }
 
-header img {
-  height: 2rem;
-}
-
 main {
   display: grid;
   column-gap: 30px;
@@ -193,7 +193,8 @@ main {
 .trend,
 .card {
   background-color: #fff;
-  border-radius: 2rem;
+  border-radius: .5rem;
+  box-shadow: 3px 3px 7px 1px #bbb;
 }
 
 .cards {
@@ -202,4 +203,42 @@ main {
   display: grid;
   gap: 30px;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.announce,
+.trend,
+.cards {
+  position: relative;
+}
+
+.cardTitle {
+  position: absolute;
+  left: 0;
+  top: -35px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-left: 8px solid #ffb703;
+  padding: 2rem 1rem;
+}
+
+.card p {
+  color: gray;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+.cardLinks {
+  display: flex;
+  gap: 30px;
+  align-self: end;
+  padding-right: 10px;
 }
