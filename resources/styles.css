@@ -7,6 +7,10 @@ body {
   margin: 0;
 }
 
+p {
+  margin: 0;
+}
+
 #container {
   display: grid;
   grid-template-columns: 1fr 5fr;
@@ -75,14 +79,74 @@ h1 {
 
 header {
   grid-area: header;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
   box-shadow: 0 0 10px 3px gray;
   z-index: 1;
 }
 
-main {
-  background-color: #e9ecef;
+.headerLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.search img {
-  border: 1px solid red;
+.search {
+  display: flex;
+  gap: 0.8rem;
+}
+
+input {
+  flex: 1;
+  border-radius: 50px;
+  background-color: #e9ecef;
+  border: 0;
+  padding-left: 15px;
+  font-size: 1.2rem;
+  outline: none;
+  box-shadow: inset 0 0 3px 1px gray;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.greeting {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.greeting img {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+}
+
+.greeting p {
+  font-size: 1.5rem;
+}
+
+.greeting p::before {
+  content: 'Hi There,';
+  display: block;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.headerRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+header img {
+  height: 2rem;
+}
+
+main {
+  background-color: #e9ecef;
 }
