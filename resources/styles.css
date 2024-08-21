@@ -80,7 +80,7 @@ h1 {
 header {
   grid-area: header;
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 2fr 1fr;
   justify-content: space-between;
   padding: 1.5rem 3rem;
   box-shadow: 0 0 10px 3px gray;
@@ -141,6 +141,38 @@ input {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
+  font-size: 1.2rem;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.profile img:nth-of-type(2) {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+}
+
+.links a {
+  text-decoration: none;
+  background-color: #00a8e8dd;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+  color: #fff;
+}
+
+.links a:hover {
+  background-color: #00a8e8;
+  color: #ffb703;
+  box-shadow: .5px 2px 4px 1px gray;
 }
 
 header img {
